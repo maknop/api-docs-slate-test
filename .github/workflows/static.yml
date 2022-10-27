@@ -40,11 +40,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
-        
-      - name: SlateDocs Builder
-      # You may pin to the exact commit or the version.
-      # uses: Josh-AS/slate-builder-action@63a3ca10b8d3d429f0edd248238d7890710a263f
-        uses: Josh-AS/slate-builder-action@v1.0.1
-        with:
-          # Path to the folder containing your .md files, from the root of the repo. Defaults to the root folder
-          docsPath: /sources/
