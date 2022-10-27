@@ -12,8 +12,8 @@ jobs:
 
     strategy:
       matrix:
-        ruby-version: [2.6, 2.7, '3.0', 3.1]
-        node-version: [10.x, 12.x, 14.x, 15.x]
+        ruby-version: [2.6]
+        node-version: [16.x]
 
     steps:
     - uses: actions/checkout@v3
@@ -25,7 +25,7 @@ jobs:
     - run: npm run build --if-present
         
     # Convert OpenAPI json to markdown
-    - run: node openapi.js
+    - run: node index.js
       
     - uses: actions/checkout@v2
     - name: Set up Ruby
@@ -51,4 +51,4 @@ jobs:
         bundle config path vendor/bundle
         bundle install --jobs 4 --retry 3
 
-    - run: bundle exec middleman build
+    - run: bundle exec middleman build --verbose

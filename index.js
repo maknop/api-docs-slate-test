@@ -1,5 +1,5 @@
 const converter = require('widdershins');
-const fs = require('fs')
+const fs = require('fs');
 const axios = require('axios');
 
 
@@ -46,4 +46,3 @@ axios.get('https://console.redhat.com/api/insights/v1/openapi.json')
   .catch(error => {
     console.log(error);
   });
-
