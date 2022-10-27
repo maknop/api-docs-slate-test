@@ -21,8 +21,10 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
-
-      # Convert OpenAPI json to markdown
+    - run: npm ci
+    - run: npm run build --if-present
+        
+    # Convert OpenAPI json to markdown
     - run: node openapi.js
       
     - uses: actions/checkout@v2
