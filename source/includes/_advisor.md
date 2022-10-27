@@ -62,13 +62,6 @@ func main() {
 
 ```
 
-```http
-GET https://console.redhat.com/api/insights/v1/kcs/ HTTP/1.1
-Host: console.redhat.com
-Accept: application/json
-
-```
-
 ```javascript
 
 const headers = {
