@@ -3,7 +3,9 @@ title: API Reference
 
 language_tabs: # must be one of https://git.io/vQNgJ
   - go
+  - javascript
   - python
+  - ruby
 
 toc_footers:
   - <a href='#'>Sign Up for a Developer Key</a>
@@ -11,8 +13,6 @@ toc_footers:
 
 includes:
   - advisor
-  - automation_hub
-  - compliance
 
 search: true
 
