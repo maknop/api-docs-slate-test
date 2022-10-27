@@ -13,8 +13,18 @@ jobs:
     strategy:
       matrix:
         ruby-version: [2.6, 2.7, '3.0', 3.1]
+        node-version: [10.x, 12.x, 14.x, 15.x]
 
     steps:
+    - uses: actions/checkout@v3
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+
+      # Convert OpenAPI json to markdown
+    - run: node openapi.js
+      
     - uses: actions/checkout@v2
     - name: Set up Ruby
       uses: ruby/setup-ruby@v1
@@ -28,7 +38,7 @@ jobs:
         restore-keys: |
           gems-${{ runner.os }}-${{ matrix.ruby-version }}-
           gems-${{ runner.os }}-
-
+    
     # necessary to get ruby 2.3 to work nicely with bundler vendor/bundle cache
     # can remove once ruby 2.3 is no longer supported
     - run: gem update --system
