@@ -12,7 +12,7 @@ jobs:
 
     strategy:
       matrix:
-        ruby-version: [2.6, 2.7]
+        ruby-version: [2.6]
         node-version: [16.x]
 
     steps:
