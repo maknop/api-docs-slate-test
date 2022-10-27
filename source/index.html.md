@@ -11,8 +11,6 @@ toc_footers:
 
 includes:
   - advisor
-  - automation_hub
-  - compliance
 
 search: true
 
