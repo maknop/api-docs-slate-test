@@ -45,3 +45,22 @@ axios.get('https://console.redhat.com/api/insights/v1/openapi.json')
   .catch(error => {
     console.log(error);
   });
+
+  axios.get('https://console.redhat.com/api/automation-hub/v3/openapi.json')
+  .then(response => {
+    console.log(response.data.url);
+    console.log(response.data.explanation);
+
+    //options.resolve = false;
+    //options.source = sourceUrl; // if resolve is true, must be set to full path or URL of the input document
+    converter.convert(response.data,options)
+    .then(str => {
+        fs.writeFileSync(__dirname + '/source/includes/_automation-hub.md', str, 'utf8');
+    })
+.catch(err => {
+    console.error(err);
+});
+  })
+  .catch(error => {
+    console.log(error);
+  });
