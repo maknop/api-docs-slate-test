@@ -13,6 +13,7 @@ toc_footers:
 
 includes:
   - advisor
+  - automation-hub
 
 search: true
 
