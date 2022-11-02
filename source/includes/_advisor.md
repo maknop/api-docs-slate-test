@@ -15,7 +15,7 @@ headingLevel: 2
 
 <!-- Generator: Widdershins v4.0.1 -->
 
-<h2 id="insights-advisor-api">Insights Advisor API v1.0.0</h2>
+<h1 id="insights-advisor-api">Insights Advisor API v1.0.0</h1>
 
 > Scroll down for code samples, example requests and responses. Select a language for code samples from the tabs above or the mobile navigation menu.
 
@@ -27,7 +27,7 @@ Base URLs:
 
 * <a href="https://cloud.redhat.com/">https://cloud.redhat.com/</a>
 
-<h2 id="insights-advisor-api-kcs">kcs</h2>
+<h1 id="insights-advisor-api-kcs">kcs</h1>
 
 ## kcs_list
 
@@ -266,7 +266,7 @@ Returns a list of C.R.C rule url(s) for that KCS solution
 This operation does not require authentication
 </aside>
 
-<h2 id="insights-advisor-api-rulecategory">rulecategory</h2>
+<h1 id="insights-advisor-api-rulecategory">rulecategory</h1>
 
 ## rulecategory_list
 
@@ -500,7 +500,7 @@ Categories are listed in decreasing order of importance.
 This operation does not require authentication
 </aside>
 
-<h2 id="insights-advisor-api-status">status</h2>
+<h1 id="insights-advisor-api-status">status</h1>
 
 ## status_retrieve
 
@@ -753,7 +753,7 @@ components Advisor relies on.
 This operation does not require authentication
 </aside>
 
-<h2 id="insights-advisor-api-systemtype">systemtype</h2>
+<h1 id="insights-advisor-api-systemtype">systemtype</h1>
 
 ## systemtype_list
 
