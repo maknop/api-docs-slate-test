@@ -10,6 +10,7 @@ options.httpsnippet = false;
 //options.loadedFrom = sourceUrl; // only needed if input document is relative
 //options.user_templates = './user_templates';
 options.templateCallback = function(templateName,stage,data) { return data };
+options.maxDepth = 10
 options.theme = 'darkula';
 options.search = true;
 options.sample = true; // set false by --raw
