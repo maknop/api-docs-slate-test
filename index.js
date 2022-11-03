@@ -17,7 +17,7 @@ options.discovery = false;
 options.includes = [];
 options.shallowSchemas = false;
 options.tocSummary = false;
-options.headings = 2;
+options.headings = 2; // Isn't supported in Slate
 options.yaml = false;
 options.language_tabs = [
     { 'go': 'Go' },
