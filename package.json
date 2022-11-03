@@ -1,5 +1,5 @@
 {
-  "name": "demo-slate",
+  "name": "api-docs-slate-test",
   "version": "1.0.0",
   "description": "Demo for Slate",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/maknop/demo-slate.git"
+    "url": "git+https://github.com/maknop/api-docs-slate-test.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/maknop/demo-slate/issues"
+    "url": "https://github.com/maknop/api-docs-slate-test/issues"
   },
-  "homepage": "https://github.com/maknop/demo-slate#readme",
+  "homepage": "https://github.com/maknop/api-docs-slate-test#readme",
   "dependencies": {
     "axios": "^1.1.3",
     "widdershins": "^4.0.1"
