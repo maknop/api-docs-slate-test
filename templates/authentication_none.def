@@ -1,0 +1,3 @@
+{% paragraph .success %}
+This operation does not require authentication
+{% /paragraph %}

@@ -25,4 +25,4 @@ meta:
 
 # Introduction
 
-This demo is to serve as a POC for using Slate.
+This demo is to serve as a POC for using Slate and the Widdershins library.
