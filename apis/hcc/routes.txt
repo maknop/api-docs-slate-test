@@ -1,4 +1,0 @@
-insights
-automation-hub/v3
-compliance
-cost-management
